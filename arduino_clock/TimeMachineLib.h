@@ -1,5 +1,5 @@
-#ifndef Morse_h
-#define Morse_h
+#ifndef DateTime_h
+#define DateTime_h
 
 #include "Arduino.h"
 
@@ -16,6 +16,8 @@ class DateTime {
     unsigned int getCurrentHours();
     unsigned int getCurrentTimeAsInt();
     unsigned int getDateAsInt();
+    int getElapsedMinutes();
+    //unsigned int getElapsedSeconds();
 };
 #endif
 

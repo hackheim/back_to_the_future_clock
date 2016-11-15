@@ -10,7 +10,7 @@
 // [dayMonthModule] [yearModule] [timeModule] (PRESENT_BUS, bus 1)
 // [dayMonthModule] [yearModule] [timeModule] (LAST_TIME_DEPARTED_BUS, bus 2)
 
-bool debug = true;//outputs datetime as serial
+bool debug = false;//outputs datetime as serial
 
 // Pins
 int const BUS_SWITCH_0 = 9;
@@ -59,9 +59,9 @@ void setup()
 
 void loop()
 {
-  //setTime(DESTINATION_BUS, initialDestinationDate->getDateAsInt(), initialDestinationDate->year, initialDestinationDate->getCurrentTimeAsInt());
+  setTime(DESTINATION_BUS, initialDestinationDate->getDateAsInt(), initialDestinationDate->year, initialDestinationDate->getCurrentTimeAsInt());
   setTime(PRESENT_BUS, initialPresentDate->getDateAsInt(), initialPresentDate->year, initialPresentDate->getCurrentTimeAsInt());
-  //setTime(LAST_TIME_DEPARTED_BUS, initialLastTimeDepartedDate->getDateAsInt(), initialLastTimeDepartedDate->year, initialLastTimeDepartedDate->getCurrentTimeAsInt());
+  setTime(LAST_TIME_DEPARTED_BUS, initialLastTimeDepartedDate->getDateAsInt(), initialLastTimeDepartedDate->year, initialLastTimeDepartedDate->getCurrentTimeAsInt());
   
 
   if (stringComplete) {

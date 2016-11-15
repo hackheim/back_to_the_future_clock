@@ -35,3 +35,8 @@ unsigned int DateTime::getDateAsInt()
   return day*100+month; // 24/12 -> 2412
 }
 
+int DateTime::getElapsedMinutes()
+{
+    return (getCurrentTotalSeconds()/60)%60;
+}
+
