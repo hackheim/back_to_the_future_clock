@@ -46,11 +46,15 @@ void setup()
   pinMode(BUS_SWITCH_1, OUTPUT);
   pinMode(BUS_SWITCH_2, OUTPUT);
   pinMode(BUS_SWITCH_3, OUTPUT);
-  Wire.begin();
   
-  dayMonth.begin(0x70);
-  year.begin(0x71);
-  time.begin(0x72);
+  Wire.begin();
+  for(int i = 0; i < 3; i++) 
+  {
+    setBusID(i);  
+    dayMonth.begin(0x70);
+    year.begin(0x71);
+    time.begin(0x72);
+  }
   
   initialDestinationDate = new DateTime(1955, 11, 5, 6, 0);
   initialPresentDate = new DateTime(2016, 11, 13, 23, 43);
@@ -69,8 +73,6 @@ void loop()
     inputString = "";
     stringComplete = false;
   }
-  
-  delay(50);
 }
 
 void serialEvent() {

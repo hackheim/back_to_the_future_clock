@@ -9,7 +9,7 @@ void setTime(int busID, int dayMonthValue, int yearValue, int timeValue)
   setDigit(dayMonth, 0, busID, 2, dayMonthValue, false);
   setDigit(dayMonth, 0, busID, 3, dayMonthValue, false);
   dayMonth.writeDisplay();
-  delay(10);
+  delay(1);
   if (debug)
     Serial.print(" ");
   
@@ -20,7 +20,7 @@ void setTime(int busID, int dayMonthValue, int yearValue, int timeValue)
   setDigit(year, 1, busID, 2, yearValue, false);
   setDigit(year, 1, busID, 3, yearValue, false);
   year.writeDisplay();
-  delay(10);
+  delay(1);
   if (debug)
     Serial.print(" ");
   
@@ -42,7 +42,7 @@ void setTime(int busID, int dayMonthValue, int yearValue, int timeValue)
   setDigit(time, 2, busID, 2, timeValue, false);
   setDigit(time, 2, busID, 3, timeValue, false);
   time.writeDisplay();
-  delay(10);
+  delay(1);
   
   if (debug)
     Serial.print("\n");
@@ -54,7 +54,7 @@ void setBusID(int id)
   digitalWrite(BUS_SWITCH_1, bitRead(id, 1));
   digitalWrite(BUS_SWITCH_2, bitRead(id, 2));
   digitalWrite(BUS_SWITCH_3, bitRead(id, 3));
-  delay(10);
+  delay(1);
 }
 
 
