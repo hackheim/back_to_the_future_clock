@@ -19,9 +19,9 @@ int const BUS_SWITCH_2 = 11;
 int const BUS_SWITCH_3 = 12;
 
 // Bus definations
-int const DESTINATION_BUS = 0;
-int const PRESENT_BUS = 1;
-int const LAST_TIME_DEPARTED_BUS = 2;
+int const DESTINATION_BUS = 2;
+int const PRESENT_BUS = 0;
+int const LAST_TIME_DEPARTED_BUS = 1;
 
 Adafruit_7segment dayMonth = Adafruit_7segment();
 Adafruit_7segment year = Adafruit_7segment();
@@ -56,9 +56,9 @@ void setup()
     time.begin(0x72);
   }
   
-  initialDestinationDate = new DateTime(1955, 11, 5, 6, 0);
-  initialPresentDate = new DateTime(2016, 11, 13, 23, 43);
-  initialLastTimeDepartedDate = new DateTime(1985, 10, 26, 1, 21);
+  initialDestinationDate = new DateTime(1984, 8, 12, 23, 7);
+  initialPresentDate = new DateTime(2017, 4, 10, 9, 36);
+  initialLastTimeDepartedDate = new DateTime(2016, 4, 29, 21, 6);
 }
 
 void loop()
