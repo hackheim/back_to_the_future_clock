@@ -12,7 +12,7 @@ DateTime::DateTime(unsigned int year, unsigned int month, unsigned int day, unsi
 }
 unsigned long DateTime::getCurrentTotalSeconds()
 {
-    return (hour*3600ul)+(minute*60ul)+(millis()/1000ul);
+    return (hour*3600ul)+(minute*60ul);//+(millis()/1000ul);
 }
 
 unsigned int DateTime::getCurrentMins()
