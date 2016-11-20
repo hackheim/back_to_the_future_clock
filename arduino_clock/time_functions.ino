@@ -63,6 +63,8 @@ void processCommand()
     inputString.replace("\n", "");
     inputString.trim();
     
+    Serial.println(inputString);
+    
     if (inputString=="A" && current_edit_bus!=DESTINATION_BUS)
     {
       current_edit_bus=DESTINATION_BUS;//activate bus A edit mode

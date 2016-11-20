@@ -20,8 +20,8 @@ int const BUS_SWITCH_3 = 12;
 
 // Bus definations
 int const DESTINATION_BUS = 2;
-int const PRESENT_BUS = 0;
-int const LAST_TIME_DEPARTED_BUS = 1;
+int const PRESENT_BUS = 1;
+int const LAST_TIME_DEPARTED_BUS = 0;
 
 Adafruit_7segment dayMonth = Adafruit_7segment();
 Adafruit_7segment year = Adafruit_7segment();
