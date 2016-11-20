@@ -7,7 +7,8 @@
 ## Setup software
 - Install Arduino IDE https://www.arduino.cc/en/Main/Software
 - Install CH340G drivers http://www.wch.cn/download/CH341SER_EXE.html
-- Download and unzip this repository. Click the green "Clone or download" button to do this.
+- Download this repository. Click the green "Clone or download" button to do this.
+- In the Arduino IDE: Install this library by selecting Sketch > Include Library > Add .ZIP library and navigate to the file you just downloaded
 - Download the two following libraries and install it in Arduino IDE by selecting Sketch > Include Library > Add .ZIP Library
   - https://github.com/adafruit/Adafruit_LED_Backpack
   - https://github.com/adafruit/Adafruit-GFX-Library
