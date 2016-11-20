@@ -21,7 +21,7 @@
 
 ## To change date and time
 
-Change these lines and upload the code
+Change these lines in arduino_keypad/arduino_keypad.ino and upload the code
 ```
    initialDestinationDate = new DateTime(1984, 8, 12, 23, 7);
    initialPresentDate = new DateTime(2017, 4, 10, 9, 36);
