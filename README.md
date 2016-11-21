@@ -1,5 +1,7 @@
 # Back to the future clock
 
+![The clock in working condition](images/working_small.jpg)
+
 ## Partlist
 - 2x Arduino Nano
 - 9x Adafruit 0.56" 4-Digit 7-Segment Display w/I2C Backpack https://www.adafruit.com/product/881
